@@ -173,7 +173,7 @@ def py_appengine_binary(name, srcs, configs, deps=[], data=[]):
     fail("srcs should not be empty.")
   # uses py_binary because it generates __init__.py files
   native.py_binary(
-      name = "_py_appengine_" + name,
+      name = "_py_appengine2_" + name,
       srcs = srcs,
       deps = deps,
       data = data,
