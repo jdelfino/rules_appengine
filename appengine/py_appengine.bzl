@@ -178,6 +178,7 @@ def py_appengine_binary(name, srcs, configs, deps=[], data=[]):
       deps = deps,
       data = data,
       main = srcs[0],  # no entry point, use arbitrary source file
+      legacy_create_init = False,
   )
   py_appengine_binary_base(
       name=name,
